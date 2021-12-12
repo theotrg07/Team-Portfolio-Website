@@ -1,0 +1,19 @@
+:root {
+  --darkblue: #15192B;
+  --blue: #5540FB;
+  --lightblue: #20B9FC;
+  --orange: #FB6B30;
+  --white: #ffffff;
+}
+
+HTML {
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/*# sourceMappingURL=styles.css.map */
