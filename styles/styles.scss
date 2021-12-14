@@ -1,4 +1,10 @@
-:root{
+// IMPORT COMFORTAA FONT
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+// IMPORT NUNITO FONT
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+// IMPORT SANSATION FONT
+@import url(//db.onlinewebfonts.com/c/00370d92f1b404768d34ac7dc664289e?family=Sansation);
+:root {
     --darkblue: #15192B;
     --blue: #5540FB;
     --lightblue: #20B9FC;
@@ -6,12 +12,83 @@
     --white: #ffffff;
 }
 
-HTML{
+HTML {
     scroll-behavior: smooth;
 }
 
-*{
-    padding:0;
-    margin:0;
-    box-sizing:border-box;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.home-page {
+    height: 100vh;
+    display: flex;
+    padding: 1em;
+}
+
+.logo {
+    transform: rotate(90deg);
+    background-color: #000000;
+    position: fixed;
+    bottom: 60%;
+    left: -27px;
+    padding: .5em .7em;
+    h1,
+    span {
+        color: #ffffff;
+        font-family: 'Comfortaa';
+        font-size: 14px;
+        font-weight: 400;
+    }
+    span {
+        position: relative;
+        bottom: 1ex;
+        font-size: 60%;
+    }
+}
+
+.menu {
+    position: fixed;
+    top: 6px;
+    right: 25px;
+}
+
+.line1,
+.line2,
+.line3 {
+    width: 35px;
+    height: 5px;
+    margin: 8px 0;
+    background-color: #000000;
+}
+
+.page-header .text {
+    font-family: 'Comfortaa';
+    width: max-content;
+    font-size: .8rem;
+}
+
+.page-header {
+    display: grid;
+    place-content: center;
+    position: relative;
+    left: 20%;
+    bottom: 4%;
+}
+
+.credits {
+    height: fit-content;
+    position: relative;
+    top: -2px;
+    right: 90px;
+    width: fit-content;
+    height: 40px;
+    font-family: 'Comfortaa';
+    line-height: 19px;
+}
+
+.credits p {
+    width: 160px;
 }
