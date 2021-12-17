@@ -13,6 +13,10 @@ HTML {
   scroll-behavior: smooth;
 }
 
+a {
+  text-decoration: none;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -20,7 +24,7 @@ HTML {
           box-sizing: border-box;
 }
 
-.home-page {
+.home-section {
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -32,7 +36,7 @@ HTML {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
   background-color: #000000;
-  position: fixed;
+  position: absolute;
   bottom: 60%;
   left: -27px;
   padding: .5em .7em;
@@ -67,7 +71,7 @@ HTML {
   background-color: #000000;
 }
 
-.page-header .text {
+.home_header .text {
   font-family: 'Comfortaa';
   width: -webkit-max-content;
   width: -moz-max-content;
@@ -75,7 +79,7 @@ HTML {
   font-size: .8rem;
 }
 
-.page-header {
+.home_header {
   display: -ms-grid;
   display: grid;
   place-content: center;
@@ -101,5 +105,273 @@ HTML {
 
 .credits p {
   width: 160px;
+}
+
+.about_us-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  padding: 1em;
+}
+
+.about-theo,
+.about-havier {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 35px;
+  margin: .7em 0 .7em 0;
+  padding: .5em .8em;
+  text-align: center;
+  border: 5px solid black;
+  -webkit-box-shadow: 3px 3px 4px 2px rgba(21, 25, 43, 0.25);
+          box-shadow: 3px 3px 4px 2px rgba(21, 25, 43, 0.25);
+}
+
+.about-theo h1,
+.about-havier h1 {
+  font-size: 1.3rem;
+  font-family: 'Sansation';
+}
+
+.about-theo h6,
+.about-havier h6 {
+  text-align: center;
+  max-width: 320px;
+  font-family: 'Nunito';
+  color: #2c2828;
+  font-size: .9rem;
+}
+
+.about_header {
+  margin-bottom: 1em;
+}
+
+.about_header h1 {
+  font-size: 2.3rem;
+  color: black;
+  font-family: 'Nunito';
+}
+
+.about_header hr {
+  background-color: var(--orange);
+  height: 2px;
+  border: none;
+}
+
+.website_building-section {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1.5em;
+}
+
+.website_building-section * {
+  font-family: 'Sansation';
+}
+
+.website_building-section h1 {
+  font-family: 'Sansation';
+  line-height: 30px;
+  font-size: 2rem;
+  color: #000000;
+  text-shadow: 1.5px 1.5px 2px rgba(0, 0, 0, 0.25);
+  margin-bottom: 1em;
+}
+
+.website_building-section ul {
+  max-width: 250px;
+}
+
+ul li {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #292828;
+  margin: 1.3em 0;
+}
+
+.website_building-section .note {
+  max-width: 320px;
+}
+
+.website_building-section .note p {
+  font-weight: 900;
+  font-size: .8rem;
+}
+
+.website_building-section .hire-us-btn button {
+  width: 140px;
+  margin-top: 2em;
+  padding: .4em 1em;
+  background-color: var(--blue);
+  border: none;
+  border-radius: 10px;
+  -webkit-transition: all .16s linear;
+  transition: all .16s linear;
+}
+
+.website_building-section .hire-us-btn button a {
+  color: #ffffff;
+  font-size: 1.4rem;
+}
+
+.website_building-section .hire-us-btn button:hover {
+  -webkit-transform: translateY(-7px);
+          transform: translateY(-7px);
+}
+
+.contact-section {
+  height: 100vh;
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact-section h1 {
+  font-family: 'Sansation';
+  line-height: 30px;
+  font-size: 1.8rem;
+  margin-bottom: 1em;
+  color: #000000;
+  text-shadow: 1.5px 1.5px 2px rgba(0, 0, 0, 0.25);
+}
+
+.contact-section form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: 'Nunito';
+  font-weight: 700;
+}
+
+.contact-section form label {
+  margin: 1.5em 0 .1em 0;
+  color: #292828;
+  font-size: 1.1rem;
+}
+
+.contact-section form input {
+  height: 34px;
+  width: 200px;
+  border-radius: 10px;
+  padding: .6em .8em;
+  background: #EAEAEA;
+  -webkit-transition: all .25s ease;
+  transition: all .25s ease;
+  border: 2px solid rgba(0, 0, 0, 0.75);
+}
+
+.contact-section form input:focus {
+  -webkit-animation: animate 1.5s linear forwards;
+          animation: animate 1.5s linear forwards;
+  outline: none;
+  width: 270px;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    border-top-color: rgba(0, 0, 0, 0.75);
+    border-right-color: rgba(0, 0, 0, 0.75);
+    border-bottom-color: rgba(0, 0, 0, 0.75);
+    border-left-color: rgba(0, 0, 0, 0.75);
+  }
+  50% {
+    border-top-color: var(--blue);
+    border-right-color: rgba(0, 0, 0, 0.75);
+    border-bottom-color: var(--blue);
+    border-left-color: var(--blue);
+  }
+  100% {
+    border-top-color: var(--blue);
+    border-right-color: var(--blue);
+    border-bottom-color: var(--blue);
+    border-left-color: var(--blue);
+  }
+}
+
+@keyframes animate {
+  0% {
+    border-top-color: rgba(0, 0, 0, 0.75);
+    border-right-color: rgba(0, 0, 0, 0.75);
+    border-bottom-color: rgba(0, 0, 0, 0.75);
+    border-left-color: rgba(0, 0, 0, 0.75);
+  }
+  50% {
+    border-top-color: var(--blue);
+    border-right-color: rgba(0, 0, 0, 0.75);
+    border-bottom-color: var(--blue);
+    border-left-color: var(--blue);
+  }
+  100% {
+    border-top-color: var(--blue);
+    border-right-color: var(--blue);
+    border-bottom-color: var(--blue);
+    border-left-color: var(--blue);
+  }
+}
+
+.contact-section .message-input {
+  height: 120px;
+  width: 270px;
+}
+
+.contact-section form button {
+  width: 110px;
+  margin-top: 2em;
+  padding: .4em 1em;
+  background-color: var(--blue);
+  border: none;
+  border-radius: 10px;
+  -webkit-transition: all .16s linear;
+  transition: all .16s linear;
+}
+
+.contact-section form button a {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-family: 'Nunito';
+}
+
+.contact-section form button:hover {
+  -webkit-transform: translateY(-7px);
+          transform: translateY(-7px);
 }
 /*# sourceMappingURL=styles.css.map */
