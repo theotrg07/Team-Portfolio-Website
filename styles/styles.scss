@@ -10,6 +10,8 @@
     --lightblue: #20B9FC;
     --orange: #FB6B30;
     --white: #ffffff;
+    --typewriterSpeed: 3s;
+    --typewriterCharacters: 18;
 }
 
 HTML {
@@ -69,18 +71,60 @@ a {
     background-color: #000000;
 }
 
+.home_header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 20%;
+    bottom: 4%;
+}
+
 .home_header .text {
     font-family: 'Comfortaa';
     width: max-content;
     font-size: .8rem;
+    display: flex;
+    text-align: center;
+    max-width: 190px;
+    flex-direction: column;
 }
 
-.home_header {
-    display: grid;
-    place-content: center;
+.home_header h1 {
     position: relative;
-    left: 20%;
-    bottom: 4%;
+}
+
+.home_header h1::before,
+.home_header h1::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.home_header h1::before {
+    background: white;
+    animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards;
+}
+
+.home_header h1::after {
+    width: .125em;
+    background: black;
+    animation: typewriter var(--typewriterSpeed) steps(22) 1s forwards, blink 750ms steps(22) infinite;
+}
+
+@keyframes blink {
+    to {
+        background: transparent;
+    }
+}
+
+@keyframes typewriter {
+    to {
+        left: 100%
+    }
 }
 
 .credits {
