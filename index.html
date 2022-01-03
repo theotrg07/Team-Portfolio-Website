@@ -1,176 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="css/index.css">
     <title>Solaris Portfolio</title>
 </head>
-
 <body>
     <div class="container">
-        <div class="home-section">
+        <main class="home-section">
+            <header>
+                <div class="logo-column">
+                    <div class="logo">
+                        <p>solaris <span>INT</span></p>
+                    </div>
+                </div>
+                <div class="menu">
+                    <nav class="nav-bar">
+                        <ul class="list">
+                            <li><a href="/">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#website-building">Website building</a></li>
+                            <li><a href="#contacts">Contact us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="menu-btn">
+                    <div class="menu-btn__burger"></div>
+                </div>
+            </header>
             <div class="logo-column">
                 <div class="logo">
-                    <h1>solaris<span>INT</span>
-                    </h1>
+                    <p>solaris <span>INT</span></p>
                 </div>
             </div>
-
-            <div class="home_header">
-                <div class="text">
-                    <h1 class="first_header">We are solaris a web dev team based in Belgium</h1>
-
-                </div>
+            <div class="text">
+                <h1>We are solaris a web dev team based in Belgium</h1>
             </div>
-
-
             <div class="credits">
                 <p>@solaris 2021</p>
                 <p>all rights reserved</p>
             </div>
+        </main>
+        <section id="About">
+            <h1>Allow us to bring that idea of yours to life</h1>
+            <ul class="list">
+                <li>100% satisfaction guaranteed</li>
+                <li>
+                    We build fully responsive websites that showcase who you are or that product
+                    you wanna sell
+                </li>
+                <li>
+                    what are you waiting for? contact us now, through email or fill the following
+                    contact form
+                </li>
+            </ul>
+            <div class="hire-us-btn">
+                <button><a href="#">Hire Us</a></button>
+            </div>
+        </section>
+        <section id="contacts">
+            <h1>Feel free to contact us for your website</h1>
 
-            <div class="menu">
-                <div class="meunu-icon" onclick=''>
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
+            <form action="post" class="form">
+                <label for="#name-field">Your name</label>
+                <input type="text" id='#name-field' placeholder="Enter your name">
+
+                <label for="#email-field">Your email</label>
+                <input type="email" id='#email-field' placeholder="Enter your email">
+
+                <label for="#message-field">Your message</label>
+                <input type="text" id='#message
+                -field' class="message-input" placeholder="Enter your message">
+
+                <div class="sumbit-btn">
+                    <button><a href="#">Submit</a></button>
                 </div>
-            </div>
-
-
-
-
-
-        </div>
-
-    </div>
-
-    <div class="about_us-section">
-
-
-
-        <div class="about_header">
-            <h1>About Us</h1>
-            <hr>
-        </div>
-
-        <div class="about-theo">
-            <h1>Theofilos Trigkoudis</h1>
-            <br>
-            <h6>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
-                book.
-            </h6>
-
-        </div>
-
-        <div class="about-havier">
-            <h1>Havier Alejandro Sanchez</h1>
-            <br>
-            <h6>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
-                book.
-            </h6>
-        </div>
-
-    </div>
-
-    <div class="website_building-section">
-        <h1>Let us build your business</h1>
-        <ul class="list">
-            <li>We promise 100% satisfaction otherwise money refund</li>
-
-            <li>We build you a fully responsive website which adapts to every screen size</li>
-
-            <li>Reach us through email or fill the following contact form to agree on your website standards and the price
-            </li>
-        </ul>
-
-        <div class="note">
-            <p>Please note that you will be charged for the hosting part too, if you want us to take care of it</p>
-        </div>
-
-        <div class="hire-us-btn">
-            <button><a href="#">Hire Us</a></button>
-        </div>
-    </div>
-
-    <div class="contact-section">
-
-        <h1>Feel free to contact us for your website</h1>
-
-        <form action="" class="form">
-
-
-
-            <label for="#name-field">Your name</label>
-            <input type="text" id='#name-field' placeholder="Enter your name">
-
-            <label for="#email-field">Your email</label>
-            <input type="email" id='#email-field' placeholder="Enter your email">
-
-            <label for="#message-field">Your message</label>
-            <input type="text" id='#message
-            -field' class="message-input" placeholder="Enter your message">
-
-            <div class="sumbit-btn">
-                <button><a href="#">Submit</a>
-                </button>
-            </div>
-
-        </form>
-
-    </div>
-
-    <div class="footer-section">
-        <h1 class="footer-header">Don't be afraid to make it happen, we do it for you</h1>
-        <img src="/images/footer.svg" alt="">
-
-        <div class="footer">
+            </form>
+        </section>
+        <footer>
+            <h1 class="footer-header">Don't be afraid to make it happen, we do it for you</h1>
             <div class="support">
                 <div class="support_header">
-                    <h1>Support</h1>
-                    <hr>
+                    <h2>Support</h1>
                 </div>
                 <h3>Email:Grenixathe@gmail.com</h3>
             </div>
-
             <div class="members">
                 <div class="members_header">
-                    <h1>Members</h1>
-                    <hr>
+                    <h2>Members</h2>
                 </div>
-                <h3>Theo</h3>
-                <h3>Xavi</h3>
+                <h3><a href="">Theo</a></h3>
+                <h3><a href="">Xavi</a></h3>
             </div>
-
-            <div class="socials">
-                <div class="socials_header">
-                    <h1>Socials</h1>
-                    <hr>
-                </div>
-                <div class="icons-container">
-                    <img src="/images/github_icon.svg" alt="">
-                    <img src="/images/portfolio_icon.svg" alt="">
-                    <img src="/images/github_icon.svg" alt="">
-                    <img src="/images/portfolio_icon.svg" alt="">
-                    <img src="/images/fiverr_icon.svg" alt="">
-                </div>
+            <div class="socials_header">
+                <h1>Socials</h1>
             </div>
-            <div class="footer-credits">
-
-                <h2>@solaris<span>INT</span></h2>
-                <h2>&copy;2021|Powered by @solaris<span>INT</span></h2>
-                <h2>all rights reserved</h2>
-            </div>
-        </div>
-
-
-
-    </div>
+        </footer>
     </div>
     <script src="/js/app.js"></script>
 </body>
-
 </html>

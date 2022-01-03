@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Nunito&display=swap");
+:root {
+  --darkblue: #15192B;
+  --blue: #5540FB;
+  --lightblue: #20B9FC;
+  --orange: #FB6B30;
+  --white: #ffffff;
+  --typewriterSpeed: 3s;
+  --typewriterCharacters: 18;
+}
+
+HTML {
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a, li {
+  text-decoration: none;
+  list-style: none;
+  color: #000;
+}
+
+h1 {
+  font-family: "Comfortaa", cursive;
+}
+
+p {
+  font-family: "Nunito", sans-serif;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/*# sourceMappingURL=index.css.map */
