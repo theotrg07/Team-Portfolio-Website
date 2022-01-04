@@ -147,7 +147,8 @@ p, li, a, label {
 }
 .container #About {
   width: 100%;
-  height: 80vh;
+  height: fit-content;
+  padding: 20px 0% 0% 0%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -164,14 +165,58 @@ p, li, a, label {
   font-size: 18px;
 }
 .container #contacts {
-  height: 40vh;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 20px 0% 0% 0%;
+  max-height: 360px;
+}
+.container #contacts h1 {
+  margin-bottom: 20px;
 }
 .container #contacts form {
+  position: relative;
   display: flex;
   flex-direction: column;
+}
+.container #contacts form label {
+  font-size: 18px;
+  position: absolute;
+  left: 4%;
+  background: #ffffff;
+  z-index: 2;
+  color: #15192B;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.container #contacts form label.one {
+  top: -5%;
+}
+.container #contacts form label.two {
+  top: 19%;
+}
+.container #contacts form label.three {
+  top: 43%;
+}
+.container #contacts form input {
+  height: 50px;
+  margin-bottom: 20px;
+  padding-left: 2%;
+  border: solid 1px #15192B;
+}
+.container #contacts form input.message-input {
+  margin-bottom: 10px;
+  height: 80px;
+}
+.container #contacts form button {
+  height: 40px;
+  width: 100%;
+  border: none;
+  background-color: #20B9FC;
+  color: #ffffff;
+  font-size: 18px;
+  margin-bottom: 20px;
 }
 
 /*# sourceMappingURL=index.css.map */

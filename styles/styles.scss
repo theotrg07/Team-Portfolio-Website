@@ -168,7 +168,8 @@ p, li, a, label {
 
     #About {
         width: 100%;
-        height: 80vh;
+        height: fit-content;
+        padding: 20px 0% 0% 0%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -184,19 +185,69 @@ p, li, a, label {
             li {
                 margin-bottom: 4px;
                 font-size: 18px;
-            }
+            }   
         }
     }
 
     #contacts {
-        height: 40vh;
+        height: fit-content;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        padding: 20px 0% 0% 0%;
+        max-height: 360px;
+
+        h1 {
+            margin-bottom: 20px;
+        }
 
         form {
+            position: relative;
             display: flex;
             flex-direction: column;
+
+            label {
+                font-size: 18px;
+                position: absolute;
+                left: 4%;
+                background: #ffffff;
+                z-index: 2;
+                color: $darkblue;
+                padding-left: 5px;
+                padding-right: 5px;
+
+                &.one {
+                  top: -5%;  
+                }
+                &.two {
+                    top: 19%;
+                }
+                &.three {
+                    top: 43%;
+                }
+            }
+
+            input {
+                height: 50px;
+                margin-bottom: 20px;
+                padding-left: 2%;
+                border: solid 1px $darkblue;
+
+                &.message-input {
+                    margin-bottom: 10px;
+                    height: 80px;
+                }
+            }
+
+            button {
+                height: 40px;
+                width: 100%;
+                border: none;
+                background-color: $lightblue;
+                color: #ffffff;
+                font-size: 18px;
+                margin-bottom: 20px;
+            }
         }
     }
 }
